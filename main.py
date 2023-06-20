@@ -32,8 +32,6 @@ while in_menu:
                 if p.password == buffer_password:
                     print('Успешный вход')
                     person = p
-                    print("2: сменить пароль")
-                    print("4: подключиться к игре")
                     new_param = int(input())
                 else:
                     print('Неверный пароль')
