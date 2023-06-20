@@ -1,4 +1,5 @@
 from Gamer import Gamer
+from soure import mms
 
 in_menu = True
 
@@ -9,9 +10,7 @@ persons = []
 games = []
 
 while in_menu:
-    print('1: Создать игрока')
-    print('2: Войти')
-    print('3: Выйти из игры')
+    mms()
     param = int(input())
 
     if param == 1:
