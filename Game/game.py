@@ -10,7 +10,7 @@ class Game:
         self.password = password
 
     def start(self):
-
+        pass
     def end(self):
-
+        pass
 
