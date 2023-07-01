@@ -38,6 +38,7 @@ while in_menu:
                         pass
                     elif new_param == 2:
                         person.new_password() 
+                        1+1
                     elif new_param == 3:
                         pass
                     elif new_param == 4:
