@@ -33,6 +33,7 @@ while in_menu:
                 if p.password == buffer_password:
                     print('Успешный вход')
                     person = p
+                    game_menu()
                     new_param = int(input())
                     if new_param == 1:
                         pass
