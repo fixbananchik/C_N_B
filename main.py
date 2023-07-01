@@ -1,3 +1,4 @@
+from soure.game2 import new_password
 from Gamer import Gamer
 from soure import mms
 
@@ -35,7 +36,7 @@ while in_menu:
                     if new_param == 1:
                         pass
                     elif new_param == 2:
-                        pass
+                        new_password()
                     elif new_param == 3:
                         pass
                     elif new_param == 4:
