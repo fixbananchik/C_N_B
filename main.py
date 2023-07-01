@@ -1,11 +1,10 @@
-from soure.game_menu import game_menu
-from soure.game2 import new_password
+
 from Gamer import Gamer
 from soure import mms
 
 in_menu = True
 
-person = None
+person = None #текущий игрок
 game = None
 
 persons = []
@@ -14,6 +13,7 @@ games = []
 while in_menu:
     mms()
     param = int(input())
+    1+1
 
     if param == 1:
 
@@ -38,7 +38,8 @@ while in_menu:
                     if new_param == 1:
                         pass
                     elif new_param == 2:
-                        new_password()
+                        person.new_password() 
+                        1+1
                     elif new_param == 3:
                         pass
                     elif new_param == 4:
