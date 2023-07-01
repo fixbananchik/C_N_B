@@ -1,1 +1,2 @@
-print("2: сменить пароль")
+def new_password():
+    buffer_password = input("Введите новый пароль ")ы

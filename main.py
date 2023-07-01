@@ -32,6 +32,17 @@ while in_menu:
                     print('Успешный вход')
                     person = p
                     new_param = int(input())
+                    if new_param == 1:
+                        pass
+                    elif new_param == 2:
+                        pass
+                    elif new_param == 3:
+                        pass
+                    elif new_param == 4:
+                        pass
+                    else:
+                        pass
+
                 else:
                     print('Неверный пароль')
                 finded = True
