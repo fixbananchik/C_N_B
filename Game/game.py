@@ -3,7 +3,8 @@ users = int(input("Введите кол-во игроков "))
 password = input("Введите пароль ")
 
 class Game:
-    def __init__(self, round, users, rules, password):
+    def __init__(self, name, round, users, rules, password):
+        self.name = name
         self.round = round
         self.users = [users]
         self.rules = rules
