@@ -1,7 +1,3 @@
-round = int(input("Введите раунд "))
-users = int(input("Введите кол-во игроков "))
-password = input("Введите пароль ")
-
 class Game:
     def __init__(self, name, round, users, rules, password):
         self.name = name

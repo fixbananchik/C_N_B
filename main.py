@@ -1,8 +1,9 @@
 from soure.game_menu import game_menu
 from Gamer import Gamer
 from soure import mms
-from Game.game import Game
-
+from Game import Game
+from soure import find_person
+from soure import menu_actions
 
 in_menu = True
 
@@ -13,46 +14,32 @@ persons = []
 games = []
 
 while in_menu:
-    mms()
-    param = int(input())
-    1+1
+    param = None
+    param = mms(person)
 
+    if not param:
+        param = int(input())
     if param == 1:
 
         buffer_name = input('Введите имя: ')
         buffer_password = input('Введите пароль: ')
-        person = Gamer(0,0,0,buffer_name, buffer_password)
-        persons.append(person)
+        persons.append(Gamer(0,0,0,buffer_name, buffer_password))
 
     elif param == 2:
-        buffer_name = input('Введите имя: ')
-        buffer_password = input('Введите пароль: ')
+        #вход
+        if not person:
+            person = find_person(persons)
 
-        finded = False
+        if person:
+            param = game_menu()
+            if param == 5:
+                person = None
+            else:
+                new_game = menu_actions(param, person, game)
+                if new_game:
+                    games.append(new_game)
 
-        for p in persons:
-            if p.name == buffer_name:
-                if p.password == buffer_password:
-                    print('Успешный вход')
-                    person = p
-                    game_menu()
-                    new_param = int(input())
-                    if new_param == 1:
-                        pass
-                    elif new_param == 2:
-                        person.new_password() 
-                        1+1
-                    elif new_param == 3:
-                        pass
-                    elif new_param == 4:
-                        pass
-                    else:
-                        pass
-
-                else:
-                    print('Неверный пароль')
-                finded = True
-        if finded == False:
+        else:
             print('Пользователь не найден')
 
     elif param == 3:
