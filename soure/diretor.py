@@ -1,3 +1,5 @@
+from Game import Game
+from Gamer import Gamer
 def change_name(gamer, game):
     gamer.new_name()
 
