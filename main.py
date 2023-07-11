@@ -1,4 +1,4 @@
-from soure.game_menu import game_menu
+from soure import game_menu
 from Gamer import Gamer
 from soure import mms
 from Game import Game
